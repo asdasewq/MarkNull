@@ -10,6 +10,21 @@ MarkNull consists of two components:
 - **MarkNull-A**: An amortized variant using a trained neural network for efficient watermark removal.
 
 
+## Installation (requirements.txt)
+
+We recommend using a fresh conda environment and installing Python dependencies via `requirements.txt`.
+
+```bash
+# create and activate a conda environment
+conda create -n marknull python=3.10 -y
+conda activate marknull
+
+# upgrade pip
+python -m pip install -U pip
+
+# install dependencies
+python -m pip install -r requirements.txt
+
 ## Watermarked Image Preparation
 To facilitate deployment of watermarking schemes, readers may refer to the original implementations of all baseline methods cited in our manuscript, or alternatively use the benchmark toolkit at https://github.com/THU-BPM/MarkDiffusion. After generating watermarked images in batch, please store them under ./Watermarked/ and then run our attack pipeline on this directory.
 
