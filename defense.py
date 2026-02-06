@@ -102,6 +102,7 @@ def draw_img(att_dataset,save_path):
             continue
 
         att_image_path = os.path.join(att_dataset, fname)
+        # Clean, Watermarked Image path
         clean_image_path = os.path.join(f"./Watermarked/{att_dataset.split('/')[-1]}/", fname)
 
         # attacked
