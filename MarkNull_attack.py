@@ -15,11 +15,11 @@ from utils.marknull_nlas import OptAttackRemover
 
 if __name__ == "__main__":
    
-    device = "cuda:0" if torch.cuda.is_available() else "cpu"
+    device = "cuda" if torch.cuda.is_available() else "cpu"
 
     # Proxy Model 
     pipe = StableDiffusionPipeline.from_pretrained(
-        "sd-legacy/stable-diffusion-v1-5",
+        "stable-diffusion-v1-5/stable-diffusion-v1-5",
         torch_dtype=torch.float16
     ).to(device)
             

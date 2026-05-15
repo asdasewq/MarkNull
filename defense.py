@@ -16,10 +16,10 @@ import matplotlib.pyplot as plt
 from sklearn.metrics import roc_curve, auc
 
 
-device = "cuda:2" if torch.cuda.is_available() else "cpu"
+device = "cuda" if torch.cuda.is_available() else "cpu"
 pipe = StableDiffusionPipeline.from_pretrained(
     #"sd-legacy/stable-diffusion-v1-5",
-    "stabilityai/stable-diffusion-2-1-base",
+    "sd2-community/stable-diffusion-2-1-base",
     torch_dtype=torch.float16,
 ).to(device)
 dtype = torch.float16
