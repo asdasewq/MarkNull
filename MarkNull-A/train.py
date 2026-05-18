@@ -41,7 +41,7 @@ def parse_train_args():
     parser.add_argument('--batch_size', type=int, default=2,
                         help='Batch size for data loaders (default: 100)')
 
-    parser.add_argument('--output_dir', type=str, default='onlyhigh_logs',
+    parser.add_argument('--output_dir', type=str, default='logs',
                         help='Base directory for saving logs and models (default: logs)')
     parser.add_argument('--run_name', type=str, default=None,
                         help='Optional name for this run (used in log/model paths)')

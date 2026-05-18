@@ -32,6 +32,7 @@ To reproduce experiments, watermarked images must first be generated using the t
 
 Once generated, store all watermarked images under `./Watermarked/` following the directory structure below. We provide `Watermarked/SD2.1_GS/` as a concrete example, containing images watermarked by Gaussian Shading under Stable Diffusion 2.1.
 
+Watermark baselines: [DwtDctSvd](https://github.com/guofei9987/blind_watermark) and [Gaussian Shading](https://github.com/bsmhmmlf/Gaussian-Shading) (CVPR 2024).
 ---
 
 ## Data Layout
@@ -114,7 +115,7 @@ cd Decode
 We additionally provide an implementation of the detection-based defense proposed in the paper:
 
 ```bash
-python defense.py
+python Attack_detection.py
 ```
 
 ---
