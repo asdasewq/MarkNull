@@ -1,0 +1,3 @@
+MarkNull-A/trained_model/*.ckpt
+MarkNull-A/trained_model/*.pt
+*.7z
